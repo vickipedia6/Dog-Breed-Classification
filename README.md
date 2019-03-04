@@ -59,7 +59,7 @@ Accuracy : 79%
 
 ## License
 
-This project is licensed under the MIT License - see the [License.md](License.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
 
 ## Acknowledgments
 
