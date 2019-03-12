@@ -15,6 +15,10 @@ Just run the ipynb notebook. Tune the hyper parameters for better accuracy.
 * OpenCv
 * Pytorch. 
 
+### Architecture
+
+ <img src='nn(1).svg' width=500px> 
+
 ### Project results
 
 This project met the following specifications:
