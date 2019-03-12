@@ -17,7 +17,7 @@ Just run the ipynb notebook. Tune the hyper parameters for better accuracy.
 
 ### Architecture
 
- <img src='nn(1).svg' width=500px> 
+ <img src='nn (1).svg' width=500px> 
 
 ### Project results
 
