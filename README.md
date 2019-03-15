@@ -27,16 +27,31 @@ Download dog image file from https://s3-us-west-1.amazonaws.com/udacity-aind/dog
 
 ### Install
 
-1. Clone the repository and navigate to the downloaded folder.
-	```	
-	git clone https://github.com/vickipedia6/Dog-Breed-Classification.git
-	cd Dog-Breed-Classifier
-	```
-2. Open the jupyter notebook
-	```
-	jupyter notebook Dog-breed_classifier.ipynb	
-	```
-3. Load the pre trained model using the following code in jupyter notebook
+1. Download the project materials from our GitHub repository. You can get download the repository with
+  ```
+  git clone https://github.com/vickipedia6/Dog-Breed-Classification.git
+  ```
+ 2. Download anaconda or miniconda based on the instructions in the [Anaconda documentation](https://docs.anaconda.com).
+ 
+ 3. Create a new conda environment:
+  ```
+  conda create --name deep-learning python=3
+  ```
+ 4. Enter your new environment:
+  * Mac/Linux: >> ``` source activate deep-learning ```
+  * Windows: >>  ```activate deep-learning ```
+  
+ 5. Ensure you have numpy, matplotlib, pandas, and jupyter notebook installed by doing the following:
+  ```
+  conda install numpy matplotlib pandas jupyter notebook
+  ```
+ 6. Run the following to open up the notebook server:
+  ```
+  jupyter notebook dog_app.ipynb
+  ```
+ 7. Execute all the cells in the code.
+ 
+ 8. Load the pre trained model using the following code in jupyter notebook
     <code>
        model_scratch.load_state_dict(torch.load('model_scratch.pt'))
     </code>
