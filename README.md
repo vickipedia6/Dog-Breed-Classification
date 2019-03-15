@@ -2,9 +2,19 @@
 
 This project was developed as a part of Udacity's Deep Learning Nanodegree. In this project, i have created a convolutional neural network from scratch using pytorch and also created a cnn using transfer learning in pytorch.
 
-## Getting Started
+# Getting Started
 
 Just run the ipynb notebook. Tune the hyper parameters for better accuracy.
+
+## Ouput
+
+<img src="/images/human.jpg" width=300px>     <img src="/images/dog.jpg" width=300px> 
+
+## Download
+
+Download dog image file from https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/dogImages.zip
+
+Download dog image file from https://s3-us-west-1.amazonaws.com/udacity-aind/dog-project/lfw.zip
 
 ### Prerequisites
 
@@ -14,6 +24,22 @@ Just run the ipynb notebook. Tune the hyper parameters for better accuracy.
 * MatPlotLib
 * OpenCv
 * Pytorch. 
+
+### Install
+
+1. Clone the repository and navigate to the downloaded folder.
+	```	
+	git clone https://github.com/vickipedia6/Dog-Breed-Classification.git
+	cd Dog-Breed-Classifier
+	```
+2. Open the jupyter notebook
+	```
+	jupyter notebook Dog-breed_classifier.ipynb	
+	```
+3. Load the pre trained model using the following code in jupyter notebook
+    <code>
+       model_scratch.load_state_dict(torch.load('model_scratch.pt'))
+    </code>
 
 ### Architecture
 
@@ -43,18 +69,27 @@ This project met the following specifications:
 
 ## Losses
 
-###Model scratch:
+### Model scratch:
 Training loss: 4.158 ... Validation loss: 3.442
 
-###Transfer model:
+### Transfer model:
 Training loss: 0.0951 ... Validation loss: 0.025 
 
-### Accuracy:
+## Probable Errors
 
-###Model scratch:
+During Training this error can occur "OSError: image file is truncated (49 bytes not processed)". Use this code to solve it
+
+<code>
+ from PIL import ImageFile /n
+ ImageFile.LOAD_TRUNCATED_IMAGES = True
+</code>
+
+## Accuracy:
+
+### Model scratch:
 Accuracy : 14%
 
-###Transfer model:
+### Transfer model:
 Accuracy : 79%
 
 ## Built With
